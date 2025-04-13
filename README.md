@@ -1,4 +1,5 @@
 # OOP-ASSIGNMENT
+ACTIVITY 1
 # Base class: Superhero
 class Superhero:
     def __init__(self, name, alias, power, level=1):

@@ -61,3 +61,39 @@ if __name__ == '__main__':
     hero2 = FlyingSuperhero("Diana Prince", "Wonder Woman", "Agility & Wisdom", level=4, flying_speed=200)
     hero2.display_info()  # Shows polymorphism by the overridden method
     hero2.fly()           # Calls the method unique to FlyingSuperhero
+
+    ACTIVITY 2
+    # Define a Car class with a custom move() method.
+class Car:
+    def move(self):
+        print("Driving 🚗")
+
+
+# Define a Plane class with its own version of the move() method.
+class Plane:
+    def move(self):
+        print("Flying ✈️")
+
+
+# Define a Boat class with a different move() method.
+class Boat:
+    def move(self):
+        print("Sailing 🚤")
+
+
+def main():
+    # Create instances of each class.
+    car = Car()
+    plane = Plane()
+    boat = Boat()
+
+    # Polymorphism in action: iterate over a sequence of vehicles
+    # and call the same method 'move()' on each.
+    vehicles = [car, plane, boat]
+    for vehicle in vehicles:
+        vehicle.move()
+
+
+if __name__ == '__main__':
+    main()
+
